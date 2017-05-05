@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:id="@+id/title"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FFTW"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/tv_runtime_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            >
+            <Button
+                android:id="@+id/btn_fftw_init"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fftw_init" />
+
+            <Button
+                android:id="@+id/btn_fftw_dft_1d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fftw_dft_1d" />
+
+            <Button
+                android:id="@+id/btn_fftw_dft_r2c_1d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fftw_dft_r2c_1d" />
+
+            <Button
+                android:id="@+id/btn_fftwf_dft_r2c_1d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fftwf_dft_r2c_1d" />
+
+            <Button
+                android:id="@+id/btn_fftwf_dft_r2c_1d_thread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fftwf_dft_r2c_1d_thread" />
+
+            <Button
+                android:id="@+id/btn_fftwf_dft_r2c_1d_thread_measure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fftwf_dft_r2c_1d_thread_measure" />
+
+            <Button
+                android:id="@+id/btn_fftw_dft_2d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fftw_dft_2d" />
+
+            <Button
+                android:id="@+id/btn_fftw_dft_r2c_2d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fftw_dft_r2c_2d" />
+
+            <Button
+                android:id="@+id/btn_fftwf_dft_r2c_2d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fftwf_dft_r2c_2d" />
+
+            <Button
+                android:id="@+id/btn_fftwf_dft_r2c_2d_thread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fftwf_dft_r2c_2d_thread" />
+
+            <Button
+                android:id="@+id/btn_fftwf_dft_r2c_2d_thread_measure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fftwf_dft_r2c_2d_thread_measure" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
